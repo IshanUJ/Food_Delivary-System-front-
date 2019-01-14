@@ -1,0 +1,149 @@
+
+
+/*  Main----------------------------  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    color: #555;
+    font-family: 'lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    
+    max-width: 1140px;
+    margin : 0 auto;
+    
+}
+
+/*Header--------------------------------*/
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.61)),url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;  
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+    
+}
+h1{
+    margin: 0;
+    color: white;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: low;
+}
+
+
+
+/*  Buttons----------------------------------- */
+
+
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px; 
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s , color 0.2;
+    
+}
+
+.full:link,
+.full:visited {
+    background-color: rgba(170, 51, 8, 0.78);
+    border: 1px solid rgba(170, 51, 8, 0.78);
+    color: white;
+}
+
+.ghost:link,
+.ghost:visited {
+    
+    border: 1px solid rgba(170, 51, 8, 0.78);
+    color : rgba(170, 51, 8, 0.78);
+    
+}
+
+.full:hover,
+.full:active{
+    border: rgba(191, 59, 12, 0.88);
+    
+}
+
+.ghost:hover,
+.ghost:active{
+    border: rgba(191, 59, 12, 0.88);
+    color: white;
+    
+}
+.btn:hover,
+.btn:active{
+    border: rgba(191, 59, 12, 0.88);
+    
+}
+
+
+/* Logo-----------------------------------------                         */
+
+
+
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    
+}
+
+/* navigation-----------------------------------------                         */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px
+    
+}
+.main-nav li{
+    
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    padding:  8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    
+    
+    
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid rgba(170, 51, 8, 0.78);
+}
